@@ -298,4 +298,11 @@ include vendor/aosp/config/ota.mk
 PRODUCT_COPY_FILES += \
     vendor/aosp/config/permissions/privapp-permissions-custom.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-custom.xml
 
+# Enable blur
+TARGET_ENABLE_BLUR ?= false
+ifeq ($(TARGET_ENABLE_BLUR),true)
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.custom.blur.enable=true
+endif
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
