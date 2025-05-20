@@ -308,4 +308,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.custom.blur.enable=false
 endif
 
+PRODUCT_SYSTEM_PROPERTIES += ro.surface_flinger.supports_background_blur=1
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
