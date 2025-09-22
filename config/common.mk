@@ -112,6 +112,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.ime.kb_pad_land_l=64 \
     ro.com.google.ime.kb_pad_land_r=64
 
+# GameSpace
+PRODUCT_PACKAGES += \
+    GameSpace
+
 # Overlay
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.boot.vendor.overlay.theme=com.google.android.systemui.gxoverlay_gms
